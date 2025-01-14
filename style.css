@@ -1,0 +1,352 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    display: flex;
+    gap: 40px;
+    align-items: flex-end;
+}
+
+.hamburger {
+    background: none;
+    border: 0;
+    display: none;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.hamburger span{
+    width: 40px;
+    height: 5px;
+    border-radius: 10px;
+    display: block;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.menu {
+    display: flex;
+    gap: 40px;
+    padding-bottom: 5px;
+}
+
+.menu a {
+    font-family: Merienda;
+    font-size: 12px;
+    line-height: 17.33px;
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.251);
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    transform: scale(1.1);
+}
+
+.promo {
+    /* краткая запись bg-image + bg-repeat + bg-pos / bg-size */
+    background: url(./img/promo.jpg) no-repeat center / cover;
+    height: 640px;
+    padding: 30px 0;
+}
+
+.promo_text {
+    text-align: center;
+    padding-top: 111px;
+    color: white;
+}
+
+
+.promo_text h1 {
+    font-family: Merienda;
+    font-size: 40px;
+    line-height: 57.76px;
+    margin-bottom: 20px;
+}
+
+
+.promo_text h2 {
+    font-family: Merienda;
+    font-size: 24px;
+    line-height: 34.66px;
+    margin: 35px 0 20px;
+}
+
+
+.btn {
+    width: 120px;
+    height: 30px;
+    border-radius: 3px;
+    border: 1px solid #FFFFFF;
+    background-color: transparent;
+    font-family: Merienda;
+    font-size: 14px;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.about {
+    padding: 80px 0 100px;
+    text-align: center;
+}
+
+.about h2 {
+    font-family: Merienda;
+    font-size: 24px;
+    line-height: 34.66px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-family: Merienda;
+    font-size: 14px;
+    line-height: 20.22px;
+    margin-bottom: 20px;
+}
+
+.about_text {
+    max-width: 589px;
+    margin: 0 auto;
+}
+
+.popular {
+    /* краткая запись bg-image + bg-repeat + bg-pos / bg-size */
+    background: url(./img/popular.jpg) no-repeat center / cover;
+    padding: 80px 0 110px;
+}
+
+.popular h2 {
+    font-family: Merienda;
+    font-size: 24px;
+    line-height: 34.66px;
+    margin-bottom: 39px;
+    text-align: center;
+}
+
+.product_box {
+    display: grid;
+    grid-template-columns: repeat(3, 220px);
+    gap: 71px;
+    justify-content: center;
+}
+
+.product {
+    background: rgba(255, 255, 255, 0.651);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: right;
+    color: black;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.1);
+}
+
+.product img {
+    display: block;
+    margin: auto;
+}
+
+.product h3 {
+    font-family: Merienda;
+    font-size: 14px;
+    line-height: 20.22px;
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+.product b {
+    font-family: Merienda;
+    font-size: 14px;
+    line-height: 20.22px;
+    margin-top: 10px;
+}
+
+.shadow {
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.251);
+}
+
+.footer {
+    padding: 20px 0 30px;
+    text-align: center;
+}
+
+.footer a {
+    color: black;
+}
+
+.footer .menu {
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 36px;
+}
+
+
+/* ---------PAGE STYLE--------- */
+
+.page_promo {
+    height: 260px;
+}
+
+.pt-60 {
+    padding-top: 60px;
+}
+
+.about_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.w-340 {
+    width: 340px;
+    margin: 0;
+}
+
+.filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 83px;
+    padding: 60px 0;
+    font-family: Merienda;
+    font-size: 12px;
+    line-height: 17.33px;
+}
+
+.filter_btn {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 5px;
+}
+
+
+/* Для экранов с шириной меньше чем 1200px(lg-экранов) */
+@media (max-width: 1200px) {
+
+   
+}
+
+/* Для экранов с шириной меньше чем 992px(md-экранов) */
+@media (max-width: 992px) {
+
+   
+}
+
+/* Для экранов с шириной меньше чем 767px(sm-экранов) */
+@media (max-width: 767px) {
+
+    .product_box {
+        grid-template-columns: repeat(2, 200px);
+    }
+
+   
+}
+
+/* Для экранов с шириной меньше чем 576px(xs-экранов) */
+@media (max-width: 576px) {
+    .product_box {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .header {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header .menu {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.823);
+        top: 0;
+        left: -100%;
+        bottom: 0;
+        flex-direction: column;
+        padding: 50px;
+        gap: 20px;
+        transition: 0.3s;
+    }
+
+    .header .menu.open {
+        left: 0;
+    }
+
+    .hamburger {
+        display: flex;
+        transition: 0.3s;
+    }    
+
+    .hamburger.active span:nth-child(2) {
+        transform: translateX(100px);
+        position: absolute;
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translateY(7px);
+    }
+
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translateY(-7px);
+    }
+
+    .hamburger.active {
+        transform: scale(0.75);
+    }    
+}
+
+
+
+/* Для экранов с шириной меньше чем 360px(xss-экранов) */
+@media (max-width: 375px) {
+    .product_box {
+        grid-template-columns: repeat(1, 200px);
+    }
+
+    .promo_text h1 {
+        font-size: 34px;
+        line-height: normal;
+    }
+
+    .promo_text h2 {
+        font-size: 15px;
+    }
+}
